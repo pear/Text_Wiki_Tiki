@@ -82,7 +82,7 @@ class Text_Wiki_Tiki extends Text_Wiki {
         'Tighten'
     );
 
-    function Text_Wiki_Tiki($rules = null) {
+    function __construct($rules = null) {
         parent::Text_Wiki($rules);
         $this->addPath('parse', $this->fixPath(dirname(__FILE__)).'Parse/Tiki');
 //        $this->addPath('render', $this->fixPath(dirname(__FILE__)).'Render');

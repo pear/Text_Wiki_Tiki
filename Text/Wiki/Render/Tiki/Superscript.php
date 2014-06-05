@@ -27,4 +27,3 @@ class Text_Wiki_Render_Tiki_Superscript extends Text_Wiki_Render {
         }
     }
 }
-?>

@@ -68,4 +68,3 @@ class Text_Wiki_Render_Tiki_Table extends Text_Wiki_Render {
         return $output;
     }
 }
-?>

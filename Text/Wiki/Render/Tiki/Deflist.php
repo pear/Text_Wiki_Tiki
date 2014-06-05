@@ -65,4 +65,3 @@ class Text_Wiki_Render_Tiki_Deflist extends Text_Wiki_Render {
         return $output;
     }
 }
-?>

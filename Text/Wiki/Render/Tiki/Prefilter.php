@@ -22,4 +22,3 @@ class Text_Wiki_Render_Tiki_Prefilter extends Text_Wiki_Render {
         return '';
     }
 }
-?>

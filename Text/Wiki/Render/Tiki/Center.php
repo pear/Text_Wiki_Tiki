@@ -26,4 +26,3 @@ class Text_Wiki_Render_Tiki_Center extends Text_Wiki_Render {
         }
     }
 }
-?>

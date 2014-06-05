@@ -24,4 +24,3 @@ class Text_Wiki_Render_Tiki_Code extends Text_Wiki_Render {
         return $ret.")}\n".$options['text']."\n{CODE}";
     }
 }
-?>

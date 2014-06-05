@@ -10,4 +10,3 @@ class Text_Wiki_Render_Tiki_Heading extends Text_Wiki_Render {
         }
     }
 }
-?>

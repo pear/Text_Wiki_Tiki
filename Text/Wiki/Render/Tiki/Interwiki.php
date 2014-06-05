@@ -20,4 +20,3 @@ class Text_Wiki_Render_Tiki_Interwiki extends Text_Wiki_Render {
         return '(('.$options['site'].':'.$options['page'].(strlen($options['text']) ? '|'.$options['text'] : '').'))';
     }
 }
-?>

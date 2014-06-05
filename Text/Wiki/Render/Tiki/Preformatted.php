@@ -44,5 +44,3 @@ class Text_Wiki_Render_Tiki_Preformatted extends Text_Wiki_Render
         return '~pp~'.$options['text'].'~/pp~';
     }
 }
-
-?>

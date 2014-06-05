@@ -20,4 +20,3 @@ class Text_Wiki_Render_Tiki_Raw extends Text_Wiki_Render {
         return '~np~'.$options['text'].'~/np~';
     }
 }
-?>

@@ -20,4 +20,3 @@ class Text_Wiki_Render_Tiki_Html extends Text_Wiki_Render {
         return '<html>'.$options['text'].'</html>';
     }
 }
-?>

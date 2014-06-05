@@ -32,4 +32,3 @@ class Text_Wiki_Render_Tiki_Blockquote extends Text_Wiki_Render {
         }
     }
 }
-?>

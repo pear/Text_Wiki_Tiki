@@ -22,4 +22,3 @@ class Text_Wiki_Render_Tiki_Phplookup extends Text_Wiki_Render {
         return $options['text'];
     }
 }
-?>

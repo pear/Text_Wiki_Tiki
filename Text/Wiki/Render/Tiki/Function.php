@@ -67,4 +67,3 @@ class Text_Wiki_Render_Tiki_Function extends Text_Wiki_Render {
         return "\n$output\n\n";
     }
 }
-?>

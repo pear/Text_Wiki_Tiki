@@ -25,5 +25,3 @@ class Text_Wiki_Render_Tiki_Anchor extends Text_Wiki_Render {
         }
     }
 }
-
-?>
