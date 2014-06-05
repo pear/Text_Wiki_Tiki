@@ -101,7 +101,7 @@ class Text_Wiki_Render_Tiki_Test extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $obj = Text_Wiki::singleton('Tiki');
+        $obj = new Text_Wiki_Tiki();
         $this->t = new Text_Wiki_Render_Tiki($obj);
     }
 
@@ -122,7 +122,7 @@ class Text_Wiki_Render_Tiki_SetUp_Tests extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $obj = Text_Wiki::singleton('Tiki');
+        $obj = new Text_Wiki_Tiki();
         $testClassName = get_class($this);
         $ruleName = preg_replace('/Text_Wiki_Render_Tiki_(.+?)_Test/', '\\1', $testClassName);
         $className = 'Text_Wiki_Render_Tiki_' . $ruleName;
