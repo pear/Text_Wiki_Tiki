@@ -38,7 +38,7 @@ class Text_Wiki_Parse_Tiki_SpecialChar extends Text_Wiki_Parse {
                        '~lt~',
                        '~gt~');
 
-    function Text_Wiki_Parse_SpecialChar(&$obj) {
+    function __construct(&$obj) {
         parent::Text_Wiki_Parse($obj);
 
         $this->regex = '';

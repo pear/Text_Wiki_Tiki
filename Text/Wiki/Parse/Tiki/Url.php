@@ -99,7 +99,7 @@ class Text_Wiki_Parse_Tiki_Url extends Text_Wiki_Parse {
     * 
     */
     
-    function Text_Wiki_Parse_Url(&$obj)
+    function __construct(&$obj)
     {
         parent::Text_Wiki_Parse($obj);
         

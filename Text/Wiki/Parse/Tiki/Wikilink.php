@@ -64,7 +64,7 @@ class Text_Wiki_Parse_Tiki_Wikilink extends Text_Wiki_Parse {
     * 
     */
     
-    function Text_Wiki_Parse_Wikilink(&$obj)
+    function __construct(&$obj)
     {
         parent::Text_Wiki_Parse($obj);
         if ($this->getConf('utf-8')) {
