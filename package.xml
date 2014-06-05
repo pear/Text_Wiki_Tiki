@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
-http://pear.php.net/dtd/tasks-1.0.xsd
-http://pear.php.net/dtd/package-2.0
-http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Text_Wiki_Tiki</name>
  <channel>pear.php.net</channel>
  <summary>Tiki parser and renderer for Text_Wiki</summary>
- <description>Parses TikiWiki mark-up to tokenize the text for Text_Wiki rendering and also renders for wiki conversion. You can see a reference for this syntax here: http://tikiwiki.org/tiki-index.php?page=WikiSyntax
- </description>
+ <description>Parses TikiWiki mark-up to tokenize the text for Text_Wiki rendering and also renders for wiki conversion. You can see a reference for this syntax here: http://tikiwiki.org/tiki-index.php?page=WikiSyntax</description>
  <lead>
   <name>Justin Patrin</name>
   <user>justinpatrin</user>
@@ -20,11 +16,11 @@ http://pear.php.net/dtd/package-2.0.xsd">
   <email>rodrigo at utopia dot org dot br</email>
   <active>yes</active>
  </lead>
- <date>2009-08-10</date>
- <time>11:21:24</time>
+ <date>2014-06-05</date>
+ <time>13:19:23</time>
  <version>
-  <release>0.1.0</release>
-  <api>0.1.0</api>
+  <release>0.2.0</release>
+  <api>0.2.0</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -32,115 +28,142 @@ http://pear.php.net/dtd/package-2.0.xsd">
  </stability>
  <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
  <notes>
-Release with some improvements to Tiki Render:
-
-* New supported render rules: Paragraph, Preformatted, Redirect
-* Fix bug #16322: properly URL rendering
-* Fix render for heading rule
-* Fix render for code rule
-* Fix render for definition list
-* Improvement to image render: can render images without additional params and has configuration option for the image path
-* Add PHPUnit tests for Tiki render
+QA release
+PHP5+
  </notes>
  <contents>
-  <dir name="/">
-   <dir name="Text">
-    <dir name="Wiki">
-     <dir name="Parse">
-      <dir name="Tiki">
-       <file name="Anchor.php" role="php" />
-       <file name="Blockquote.php" role="php" />
-       <file name="Bold.php" role="php" />
-       <file name="Box.php" role="php" />
-       <file name="Break.php" role="php" />
-       <file name="Center.php" role="php" />
-       <file name="Code.php" role="php" />
-       <file name="Colortext.php" role="php" />
-       <file name="Deflist.php" role="php" />
-       <file name="Delimiter.php" role="php" />
-       <file name="Embed.php" role="php" />
-       <file name="Emphasis.php" role="php" />
-       <file name="Freelink.php" role="php" />
-       <file name="Heading.php" role="php" />
-       <file name="Horiz.php" role="php" />
-       <file name="Html.php" role="php" />
-       <file name="Image.php" role="php" />
-       <file name="Include.php" role="php" />
-       <file name="Interwiki.php" role="php" />
-       <file name="Italic.php" role="php" />
-       <file name="List.php" role="php" />
-       <file name="Newline.php" role="php" />
-       <file name="Page.php" role="php" />
-       <file name="Paragraph.php" role="php" />
-       <file name="Plugin.php" role="php" />
-       <file name="Prefilter.php" role="php" />
-       <file name="Preformatted.php" role="php" />
-       <file name="Raw.php" role="php" />
-       <file name="Revise.php" role="php" />
-       <file name="Smiley.php" role="php" />
-       <file name="Specialchar.php" role="php" />
-       <file name="Strong.php" role="php" />
-       <file name="Subscript.php" role="php" />
-       <file name="Superscript.php" role="php" />
-       <file name="Table.php" role="php" />
-       <file name="Tighten.php" role="php" />
-       <file name="Titlebar.php" role="php" />
-       <file name="Toc.php" role="php" />
-       <file name="Tt.php" role="php" />
-       <file name="Underline.php" role="php" />
-       <file name="Url.php" role="php" />
-       <file name="Wikilink.php" role="php" />
-      </dir> <!-- //Text/Wiki/Parse/Tiki -->
-     </dir> <!-- //Text/Wiki/Parse -->
-     <dir name="Render">
-      <dir name="Tiki">
-       <file name="Anchor.php" role="php" />
-       <file name="Blockquote.php" role="php" />
-       <file name="Bold.php" role="php" />
-       <file name="Box.php" role="php" />
-       <file name="Break.php" role="php" />
-       <file name="Center.php" role="php" />
-       <file name="Code.php" role="php" />
-       <file name="Colortext.php" role="php" />
-       <file name="Deflist.php" role="php" />
-       <file name="Delimiter.php" role="php" />
-       <file name="Embed.php" role="php" />
-       <file name="Emphasis.php" role="php" />
-       <file name="Freelink.php" role="php" />
-       <file name="Function.php" role="php" />
-       <file name="Heading.php" role="php" />
-       <file name="Horiz.php" role="php" />
-       <file name="Html.php" role="php" />
-       <file name="Image.php" role="php" />
-       <file name="Include.php" role="php" />
-       <file name="Interwiki.php" role="php" />
-       <file name="Italic.php" role="php" />
-       <file name="List.php" role="php" />
-       <file name="Newline.php" role="php" />
-       <file name="Paragraph.php" role="php" />
-       <file name="Phplookup.php" role="php" />
-       <file name="Prefilter.php" role="php" />
-       <file name="Preformatted.php" role="php" />
-       <file name="Raw.php" role="php" />
-       <file name="Redirect.php" role="php" />
-       <file name="Revise.php" role="php" />
-       <file name="Strong.php" role="php" />
-       <file name="Subscript.php" role="php" />
-       <file name="Superscript.php" role="php" />
-       <file name="Table.php" role="php" />
-       <file name="Tighten.php" role="php" />
-       <file name="Toc.php" role="php" />
-       <file name="Tt.php" role="php" />
-       <file name="Underline.php" role="php" />
-       <file name="Url.php" role="php" />
-       <file name="Wikilink.php" role="php" />
-      </dir> <!-- //Text/Wiki/Render/Tiki -->
-      <file name="Tiki.php" role="php" />
-     </dir> <!-- //Text/Wiki/Render -->
-     <file name="Tiki.php" role="php" />
-    </dir> <!-- //Text/Wiki -->
-   </dir> <!-- //Text -->
-  </dir> <!-- / -->
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="ea5dc43ab58e9a76578d15eaa64bdb4c" name="tests/Text_Wiki_Render_Tiki_Anchor_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="a45c10c81bf522b8a04ab6a7ef646262" name="tests/Text_Wiki_Render_Tiki_Blockquote_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="9594d240e17d8a5d685c08aa4a567ccb" name="tests/Text_Wiki_Render_Tiki_Bold_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="1884a5edf9ccf425c0d3bfbfcf7cf93a" name="tests/Text_Wiki_Render_Tiki_Box_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="ee266e9585d22dd57c6a1e6b98dfc5c0" name="tests/Text_Wiki_Render_Tiki_Break_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="41d83c8858e04d67cb4db82172556cb7" name="tests/Text_Wiki_Render_Tiki_Center_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="7ced7449948e8cea0625c559da7d2e76" name="tests/Text_Wiki_Render_Tiki_Code_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="e1f14d86e9c46ba7ab3d39625e62946f" name="tests/Text_Wiki_Render_Tiki_Colortext_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="6d54fbaac8c239cf8e220ed18307b309" name="tests/Text_Wiki_Render_Tiki_Deflist_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="8a40ce9a1807c341229cd040571ec6b9" name="tests/Text_Wiki_Render_Tiki_Delimiter_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="ebfa57fd9346f7204f1a6ce5fc5f0485" name="tests/Text_Wiki_Render_Tiki_Embed_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="14701f6a93c544c357a08de0c91ec9d7" name="tests/Text_Wiki_Render_Tiki_Emphasis_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="f2ece9aa4f1dc73aa9795366e6fcf8ee" name="tests/Text_Wiki_Render_Tiki_Freelink_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="efe7d64621f0d59cf59f4b68e2e18e0d" name="tests/Text_Wiki_Render_Tiki_Function_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="55b221599d52edadaf621a63a847e442" name="tests/Text_Wiki_Render_Tiki_Heading_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="1e6cbaf00392f4949db7b1e7020890ba" name="tests/Text_Wiki_Render_Tiki_Horiz_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="a2dee362ead6eb0cc2f3de651712f1ef" name="tests/Text_Wiki_Render_Tiki_Html_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="4095a970c20ce91a24fd79f8a34cd5f3" name="tests/Text_Wiki_Render_Tiki_Image_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="3c1deeaa82d545ae651a6430c46e13b4" name="tests/Text_Wiki_Render_Tiki_Include_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="e01618cfca5d638c33d34ead6104c2b6" name="tests/Text_Wiki_Render_Tiki_Interwiki_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="a1018ba5e16277f7f8612b429698cee3" name="tests/Text_Wiki_Render_Tiki_Italic_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="287bbcaa7505031d8914c6ce665e3b01" name="tests/Text_Wiki_Render_Tiki_List_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="5daf54dde777cb9fa927dde8bb5d45c1" name="tests/Text_Wiki_Render_Tiki_Newline_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="04b710a95b50f4ecf81aa32127102440" name="tests/Text_Wiki_Render_Tiki_Paragraph_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="357bf4f5d8bcb0d18f162009d4422fb7" name="tests/Text_Wiki_Render_Tiki_Phplookup_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="28d7bf8819763fd6a2b16cb90365f047" name="tests/Text_Wiki_Render_Tiki_Prefilter_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="32204585afaa4c58826e7877595979f5" name="tests/Text_Wiki_Render_Tiki_Preformatted_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="babc4281918ecc352fb35b474d59a615" name="tests/Text_Wiki_Render_Tiki_Raw_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="6879bf1f87d6aa01ecd7a00f8113055c" name="tests/Text_Wiki_Render_Tiki_Redirect_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="373e925f072e50e6c0c2fe7f6a668825" name="tests/Text_Wiki_Render_Tiki_Revise_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="f2a8284f48afdd0c7c591510a6bb0dec" name="tests/Text_Wiki_Render_Tiki_SetUp_Tests.php" role="test" />
+   <file baseinstalldir="/" md5sum="0a6b2c92f6720eaf97a891b04d2c5245" name="tests/Text_Wiki_Render_Tiki_Strong_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="700cd7e59d7696f579cdacc66fc2f0bb" name="tests/Text_Wiki_Render_Tiki_Subscript_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="70119090911603e56e2d9bbd9e652680" name="tests/Text_Wiki_Render_Tiki_Superscript_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="c7a4d00b34c2e50211c1c18f15fe0555" name="tests/Text_Wiki_Render_Tiki_Table_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="a696514b3326acc269044418760e05ce" name="tests/Text_Wiki_Render_Tiki_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="49ed778340bb0c40a75bfb0cfbee60fe" name="tests/Text_Wiki_Render_Tiki_Tighten_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="48930b61f1265e02c73b2be226b996bc" name="tests/Text_Wiki_Render_Tiki_Toc_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="320d577fed06154e98668b90d239c051" name="tests/Text_Wiki_Render_Tiki_tt_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="e198be431d85b8b01c569868b2547eca" name="tests/Text_Wiki_Render_Tiki_Underline_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="f9fad2f09465508109c47cbe6699b4e7" name="tests/Text_Wiki_Render_Tiki_Url_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="ea1a6ccd298ac830c65625ef2c859eca" name="tests/Text_Wiki_Render_Tiki_Wikilink_Test.php" role="test" />
+   <file baseinstalldir="/" md5sum="6f6ac00484b3435d8e161315386e5db7" name="tests/fixtures/bug11649.txt" role="test" />
+   <file baseinstalldir="/" md5sum="31636917befcf91c5e596765075b79cd" name="tests/fixtures/test_tiki_heading_expected_matches.php" role="test" />
+   <file baseinstalldir="/" md5sum="c1a3182d3f0e32495a263832f9ceae07" name="tests/fixtures/test_tiki_to_tiki_heading_source.txt" role="test" />
+   <file baseinstalldir="/" md5sum="ccdb7715a07c681a777d3ccea03be12a" name="tests/fixtures/tiki_syntax.txt" role="test" />
+   <file baseinstalldir="/" md5sum="477d922025faf681f6d2051a2d166b0a" name="Text/Wiki/Tiki.php" role="php" />
+   <file baseinstalldir="/" md5sum="a2dcd4e3ed585315e167edf646faf0f1" name="Text/Wiki/Parse/Tiki/Anchor.php" role="php" />
+   <file baseinstalldir="/" md5sum="97707a9aa7f37e8574f0e1db2315ec80" name="Text/Wiki/Parse/Tiki/Blockquote.php" role="php" />
+   <file baseinstalldir="/" md5sum="1cd5019295ffa10cd99a727a9a0fc7c9" name="Text/Wiki/Parse/Tiki/Bold.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c9c54037ab0e9e12faa42990eb7264d" name="Text/Wiki/Parse/Tiki/Box.php" role="php" />
+   <file baseinstalldir="/" md5sum="b1d00479e5965b112263fec5c037d045" name="Text/Wiki/Parse/Tiki/Break.php" role="php" />
+   <file baseinstalldir="/" md5sum="4c5a6723a532947d71fcea6aa401b744" name="Text/Wiki/Parse/Tiki/Center.php" role="php" />
+   <file baseinstalldir="/" md5sum="3bc9b08c1dfc73a04c23f06c638ef152" name="Text/Wiki/Parse/Tiki/Code.php" role="php" />
+   <file baseinstalldir="/" md5sum="b005ed3f6f47853bad1362fc50eec6bb" name="Text/Wiki/Parse/Tiki/Colortext.php" role="php" />
+   <file baseinstalldir="/" md5sum="f4dabe1db0cbf2df9d69728cc47a5ee7" name="Text/Wiki/Parse/Tiki/Deflist.php" role="php" />
+   <file baseinstalldir="/" md5sum="3cc62063b9fbde6fe6c594f7c3e7ddd4" name="Text/Wiki/Parse/Tiki/Delimiter.php" role="php" />
+   <file baseinstalldir="/" md5sum="997f79c567ff7c52367312756b5fd646" name="Text/Wiki/Parse/Tiki/Embed.php" role="php" />
+   <file baseinstalldir="/" md5sum="fe240209fc6af54ef07c3d25776ceefa" name="Text/Wiki/Parse/Tiki/Emphasis.php" role="php" />
+   <file baseinstalldir="/" md5sum="1fca62e534ebcaf157b537402167765b" name="Text/Wiki/Parse/Tiki/Freelink.php" role="php" />
+   <file baseinstalldir="/" md5sum="906ac5a5a587be6d2696fe3b3fcd036a" name="Text/Wiki/Parse/Tiki/Heading.php" role="php" />
+   <file baseinstalldir="/" md5sum="6f7c6cd09b41abb8c9ea271f9bfce04c" name="Text/Wiki/Parse/Tiki/Horiz.php" role="php" />
+   <file baseinstalldir="/" md5sum="fc373a5f279789a1e3ac728abb82de00" name="Text/Wiki/Parse/Tiki/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="7b3baae3d66d60bd87958fd513e6e5fb" name="Text/Wiki/Parse/Tiki/Image.php" role="php" />
+   <file baseinstalldir="/" md5sum="cdcf24d72aebd10e99793233a4d6bb30" name="Text/Wiki/Parse/Tiki/Include.php" role="php" />
+   <file baseinstalldir="/" md5sum="01fd1e6e6077b5bb55fb9dea56236dcf" name="Text/Wiki/Parse/Tiki/Interwiki.php" role="php" />
+   <file baseinstalldir="/" md5sum="8b2ccb13d3a8010bda8b8a780b7b84c7" name="Text/Wiki/Parse/Tiki/Italic.php" role="php" />
+   <file baseinstalldir="/" md5sum="93324b63c46f93438d5e72a2d3fbf487" name="Text/Wiki/Parse/Tiki/List.php" role="php" />
+   <file baseinstalldir="/" md5sum="3341975a40c4b87ff4af9ebcd47cd63d" name="Text/Wiki/Parse/Tiki/Newline.php" role="php" />
+   <file baseinstalldir="/" md5sum="4e4e7a39eb79d72bfa146b762b17127e" name="Text/Wiki/Parse/Tiki/Page.php" role="php" />
+   <file baseinstalldir="/" md5sum="c16abdc3b7ab7dfb39f96ca01a9d4af1" name="Text/Wiki/Parse/Tiki/Paragraph.php" role="php" />
+   <file baseinstalldir="/" md5sum="5ef97218933a086e09238254cfcd3cd3" name="Text/Wiki/Parse/Tiki/Plugin.php" role="php" />
+   <file baseinstalldir="/" md5sum="30a2053589cda36ea2ec48c1f4577f4c" name="Text/Wiki/Parse/Tiki/Prefilter.php" role="php" />
+   <file baseinstalldir="/" md5sum="183fd8d65e3b404bb577b5d2c365d93b" name="Text/Wiki/Parse/Tiki/Preformatted.php" role="php" />
+   <file baseinstalldir="/" md5sum="59c8212476bf5cc0fc2f6b4a658bd11d" name="Text/Wiki/Parse/Tiki/Raw.php" role="php" />
+   <file baseinstalldir="/" md5sum="2c05ce669a4058e653ff8845ee4d82cd" name="Text/Wiki/Parse/Tiki/Revise.php" role="php" />
+   <file baseinstalldir="/" md5sum="83739101316f97dfcb1ac8ba1afa3222" name="Text/Wiki/Parse/Tiki/Smiley.php" role="php" />
+   <file baseinstalldir="/" md5sum="6911982a7477ce588e5f8860f9861b44" name="Text/Wiki/Parse/Tiki/Specialchar.php" role="php" />
+   <file baseinstalldir="/" md5sum="73ee139f26a6307fc84cff64207cbc47" name="Text/Wiki/Parse/Tiki/Strong.php" role="php" />
+   <file baseinstalldir="/" md5sum="2d89a6a86ac869ab5052ecc12b44ebf1" name="Text/Wiki/Parse/Tiki/Subscript.php" role="php" />
+   <file baseinstalldir="/" md5sum="16618d36277b2938fcdb0d8d21a138d0" name="Text/Wiki/Parse/Tiki/Superscript.php" role="php" />
+   <file baseinstalldir="/" md5sum="0ddc019b47a8e34256ca2dc2e4a9391c" name="Text/Wiki/Parse/Tiki/Table.php" role="php" />
+   <file baseinstalldir="/" md5sum="36e92740eb2dfb2c137648e0268dd957" name="Text/Wiki/Parse/Tiki/Tighten.php" role="php" />
+   <file baseinstalldir="/" md5sum="e7f68c8660998c4f2ffb11abd6a6d00d" name="Text/Wiki/Parse/Tiki/Titlebar.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b292d0e9038ed33e9a5c8e4202e6ac6" name="Text/Wiki/Parse/Tiki/Toc.php" role="php" />
+   <file baseinstalldir="/" md5sum="5b6b2bb9ca7f8dcbe527f0e86117d1ca" name="Text/Wiki/Parse/Tiki/Tt.php" role="php" />
+   <file baseinstalldir="/" md5sum="98e40bad77ff54054b4d5a0db485db68" name="Text/Wiki/Parse/Tiki/Underline.php" role="php" />
+   <file baseinstalldir="/" md5sum="ff05810880fe983a3f629990283b50c7" name="Text/Wiki/Parse/Tiki/Url.php" role="php" />
+   <file baseinstalldir="/" md5sum="6e12e2e45fd9b6ba844f1a0fad08673f" name="Text/Wiki/Parse/Tiki/Wikilink.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a997c279812d2e24fc479d92b916f8a" name="Text/Wiki/Render/Tiki.php" role="php" />
+   <file baseinstalldir="/" md5sum="04333515e582c72123b9a5af0e4a572f" name="Text/Wiki/Render/Tiki/Anchor.php" role="php" />
+   <file baseinstalldir="/" md5sum="6ac5bb6f0e582220015a127a329f4f1e" name="Text/Wiki/Render/Tiki/Blockquote.php" role="php" />
+   <file baseinstalldir="/" md5sum="c8980d8a5d39c7ca3bd92e730b56b621" name="Text/Wiki/Render/Tiki/Bold.php" role="php" />
+   <file baseinstalldir="/" md5sum="f3dcd5cf44ab979f2e17b9817e3543d9" name="Text/Wiki/Render/Tiki/Box.php" role="php" />
+   <file baseinstalldir="/" md5sum="5e59e8f502267b357b8c97805c1174e4" name="Text/Wiki/Render/Tiki/Break.php" role="php" />
+   <file baseinstalldir="/" md5sum="c72a092ab1d8776a7abc9ba115f35542" name="Text/Wiki/Render/Tiki/Center.php" role="php" />
+   <file baseinstalldir="/" md5sum="ee4fdb7216c3f61cacf89bab01e0a8a7" name="Text/Wiki/Render/Tiki/Code.php" role="php" />
+   <file baseinstalldir="/" md5sum="a706eb7a795c5012c64aa3f2f3d81981" name="Text/Wiki/Render/Tiki/Colortext.php" role="php" />
+   <file baseinstalldir="/" md5sum="78ed381a0b9cf6db647b256b0ef20319" name="Text/Wiki/Render/Tiki/Deflist.php" role="php" />
+   <file baseinstalldir="/" md5sum="7dce3b062a503375a8bfb1cf6ec73c33" name="Text/Wiki/Render/Tiki/Delimiter.php" role="php" />
+   <file baseinstalldir="/" md5sum="c4cd48604fed229a82cf4e15c3852a2c" name="Text/Wiki/Render/Tiki/Embed.php" role="php" />
+   <file baseinstalldir="/" md5sum="e3ec00801eefea831342d5e30fb820bd" name="Text/Wiki/Render/Tiki/Emphasis.php" role="php" />
+   <file baseinstalldir="/" md5sum="1744cecf1ed8a9f11d138afca914eb18" name="Text/Wiki/Render/Tiki/Freelink.php" role="php" />
+   <file baseinstalldir="/" md5sum="79c0b0f8fc5f63fbdd1adf57645495eb" name="Text/Wiki/Render/Tiki/Function.php" role="php" />
+   <file baseinstalldir="/" md5sum="4ec640061ade6e2dedd9a470974a3e5c" name="Text/Wiki/Render/Tiki/Heading.php" role="php" />
+   <file baseinstalldir="/" md5sum="b627cb1b81471f872ec3170ea056cfa9" name="Text/Wiki/Render/Tiki/Horiz.php" role="php" />
+   <file baseinstalldir="/" md5sum="577373a836246a64b6c11ec204cab246" name="Text/Wiki/Render/Tiki/Html.php" role="php" />
+   <file baseinstalldir="/" md5sum="8ad8f0e641ae80cbcfe8e232e97c11d0" name="Text/Wiki/Render/Tiki/Image.php" role="php" />
+   <file baseinstalldir="/" md5sum="335b601029425f451c954052a56a656a" name="Text/Wiki/Render/Tiki/Include.php" role="php" />
+   <file baseinstalldir="/" md5sum="d9ec49e7755c02e00091f4ad5fbf3b31" name="Text/Wiki/Render/Tiki/Interwiki.php" role="php" />
+   <file baseinstalldir="/" md5sum="cf6a92236aa2d1feab9c4ecae2233e78" name="Text/Wiki/Render/Tiki/Italic.php" role="php" />
+   <file baseinstalldir="/" md5sum="d25c1bc64a35fe78beaa60e6f40a723a" name="Text/Wiki/Render/Tiki/List.php" role="php" />
+   <file baseinstalldir="/" md5sum="978cd9c4c3df21a255231d630e46f641" name="Text/Wiki/Render/Tiki/Newline.php" role="php" />
+   <file baseinstalldir="/" md5sum="d614df35350e41ee361c5b8945ae31a6" name="Text/Wiki/Render/Tiki/Paragraph.php" role="php" />
+   <file baseinstalldir="/" md5sum="1f376188541e5ace83e9921a540ab0bc" name="Text/Wiki/Render/Tiki/Phplookup.php" role="php" />
+   <file baseinstalldir="/" md5sum="4030d5a93402403398cd477c689f362b" name="Text/Wiki/Render/Tiki/Prefilter.php" role="php" />
+   <file baseinstalldir="/" md5sum="8fdb36b0493a3781b466213bca90d80f" name="Text/Wiki/Render/Tiki/Preformatted.php" role="php" />
+   <file baseinstalldir="/" md5sum="0490a4863dea47c5fa1173e21927297c" name="Text/Wiki/Render/Tiki/Raw.php" role="php" />
+   <file baseinstalldir="/" md5sum="de44f9abfa6c9e009fadcc3bc09e772b" name="Text/Wiki/Render/Tiki/Redirect.php" role="php" />
+   <file baseinstalldir="/" md5sum="ada38c92ab239bdbd3ee1b4d0fae2cab" name="Text/Wiki/Render/Tiki/Revise.php" role="php" />
+   <file baseinstalldir="/" md5sum="8d811eb33408b2bcc291ad78374665e9" name="Text/Wiki/Render/Tiki/Strong.php" role="php" />
+   <file baseinstalldir="/" md5sum="6a862ec044b40ce296559ec4263df82b" name="Text/Wiki/Render/Tiki/Subscript.php" role="php" />
+   <file baseinstalldir="/" md5sum="4da66e5714f9421357db2487abebac0c" name="Text/Wiki/Render/Tiki/Superscript.php" role="php" />
+   <file baseinstalldir="/" md5sum="ec1a75f8462e9c416c03f1915d41e855" name="Text/Wiki/Render/Tiki/Table.php" role="php" />
+   <file baseinstalldir="/" md5sum="b6af481e7fd750880427b58a627cc7d0" name="Text/Wiki/Render/Tiki/Tighten.php" role="php" />
+   <file baseinstalldir="/" md5sum="b6840e9b82ee996fb2f4561a95b9b903" name="Text/Wiki/Render/Tiki/Toc.php" role="php" />
+   <file baseinstalldir="/" md5sum="3d26a3df7b0032dd44f13c6c9fa6252e" name="Text/Wiki/Render/Tiki/Tt.php" role="php" />
+   <file baseinstalldir="/" md5sum="3a74d488300a3a73fbd11a98e66bb04b" name="Text/Wiki/Render/Tiki/Underline.php" role="php" />
+   <file baseinstalldir="/" md5sum="cf523800f57f1faf03ec9736c968292a" name="Text/Wiki/Render/Tiki/Url.php" role="php" />
+   <file baseinstalldir="/" md5sum="dfbac14246b8885d98efc4275b2e339b" name="Text/Wiki/Render/Tiki/Wikilink.php" role="php" />
+  </dir>
  </contents>
  <dependencies>
   <required>
@@ -173,6 +196,22 @@ Release with some improvements to Tiki Render:
    <notes>
 First released version of Text_Wiki_Tiki.
    </notes>
-  </release> 
+  </release>
+  <release>
+   <version>
+    <release>0.2.0</release>
+    <api>0.2.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2014-06-05</date>
+   <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+   <notes>
+QA release
+PHP5+
+   </notes>
+  </release>
  </changelog>
 </package>
