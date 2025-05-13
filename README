@@ -19,6 +19,5 @@ To upgrade
 $ pear upgrade -f package.xml
 
 
-
-For the record: The Tiki community has decided to move to Tiki-Flavored markdown so no more evolution is planned for the now classic Tiki syntax:
+From 2022; The Tiki community has decided to move to Tiki-Flavored markdown so no more evolution is planned for the now classic Tiki syntax:
 https://doc.tiki.org/Tiki-Flavored-Markdown
